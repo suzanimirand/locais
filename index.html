@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locais · Nara & Weslley</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: #F0EDE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #8C6A5E;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: #84162E;
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+  }
+
+  .sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #8C6A5E;
+    margin-bottom: 3rem;
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: #8C6A5E;
+    margin: 0 auto 3rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    display: block;
+    text-decoration: none;
+    padding: 2rem;
+    border: 1px solid #8C6A5E;
+    position: relative;
+    overflow: hidden;
+    color: #F0EDE6;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  .btn:hover { transform: scale(1.01); }
+
+  .btn-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+    transition: opacity 0.3s;
+  }
+
+  .btn:hover .btn-bg { opacity: 0.5; }
+
+  .btn-overlay {
+    position: absolute;
+    inset: 0;
+    background: #84162E;
+    opacity: 0.55;
+  }
+
+  .btn-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #F0EDE6;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: block;
+    color: #F0EDE6;
+    margin-bottom: 0.4rem;
+  }
+
+  .btn-address {
+    font-size: 10px;
+    color: #F0EDE6;
+    opacity: 0.75;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="eyebrow">Nara &amp; Weslley</p>
+  <h1>Como Chegar</h1>
+  <p class="sub">Guarapari · ES</p>
+  <div class="divider"></div>
+
+  <div class="buttons">
+    <a class="btn" href="https://maps.app.goo.gl/S7wqzQLXACNHyg517" target="_blank">
+      <div class="btn-bg" style="background-image: url('images/imagem_1.png');"></div>
+      <div class="btn-overlay"></div>
+      <div class="btn-content">
+        <div class="btn-label">Cerimônia</div>
+        <span class="btn-name">Igreja Cristã Maranata</span>
+        <div class="btn-address">Av. Antônio Guimarães, 306<br>Itapebussu · Guarapari · ES</div>
+      </div>
+    </a>
+
+    <a class="btn" href="https://maps.app.goo.gl/ZgbqWSd4sydoCvjN7" target="_blank">
+      <div class="btn-bg" style="background-image: url('images/imagem_2.png');"></div>
+      <div class="btn-overlay"></div>
+      <div class="btn-content">
+        <div class="btn-label">Festa</div>
+        <span class="btn-name">Sítio em Paturá</span>
+        <div class="btn-address">R. Enoi de Oliveira, 240<br>Patura · Guarapari · ES</div>
+      </div>
+    </a>
+
+    <a href="https://youtube.com/shorts/peAvolKJGOU" target="_blank" style="margin-top: 1.25rem; display: flex; align-items: center; gap: 1rem; cursor: pointer; padding: 1rem 1.25rem; border: 1px solid #8C6A5E; background: transparent; text-decoration: none;">
+      <div style="flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: #84162E; display: flex; align-items: center; justify-content: center;">
+        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 1.5L14 9L2 16.5V1.5Z" fill="#F0EDE6"/>
+        </svg>
+      </div>
+      <div style="text-align: left;">
+        <p style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.1rem; color: #84162E; margin-bottom: 2px;">Como chegar à festa</p>
+        <p style="font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: #8C6A5E;">Toque para ver o caminho</p>
+      </div>
+    </a>
+    <div id="video-festa" style="display: none; margin-top: 0.5rem; border: 1px solid #8C6A5E; overflow: hidden;">
+      <div style="position: relative; padding-bottom: 177.78%; height: 0;">
+        <iframe src="https://www.youtube.com/embed/peAvolKJGOU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
